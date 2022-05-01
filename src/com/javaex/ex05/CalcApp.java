@@ -14,32 +14,32 @@ public class CalcApp {
     	Sub s = new Sub();
     	
     	int num1;
-    	String numLine = null;
+    	String symbol = null;
     	int num2;
    
     	
     	while(true) {
             System.out.print(">>");
-            numLine = sc.next();
-            if ( numLine.equals("/q")) {
+            symbol = sc.next();
+            if ( symbol.equals("/q")) {
                 System.out.println("종료되었습니다.");
                 break;
              } else {
                 System.out.print(">>");
-                 num1 = Integer.parseInt(numLine);
-                 numLine = sc.next();
+                 num1 = Integer.parseInt(symbol);
+                 symbol = sc.next();
                   num2 = sc.nextInt();   
                   
-                  if(numLine.equals("+")) {
+                  if(symbol.equals("+")) {
                    a.setValue(num1, num2);
                    System.out.println(a.calculate());
-                }else if(numLine.equals("-")) {
+                }else if(symbol.equals("-")) {
                     s.setValue(num1, num2);
                     System.out.println(s.calculate());   
-                 }else if (numLine.equals("*")) {
+                 }else if (symbol.equals("*")) {
                     m.setValue(num1, num2);
                      System.out.println(m.calculate());
-                 }else if (numLine.equals("/")) {
+                 }else if (symbol.equals("/")) {
                     d.setValue(num1, num2);
                     System.out.println(d.calculate());   
                  }else {
