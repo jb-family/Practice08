@@ -9,8 +9,6 @@ public class FriendApp {
 
 		Friend[] fArray = new Friend[3];
 		
-		String numLine;
-		
 		for(int i = 0; i < fArray.length; i++) {
 			String name = sc.next();//입력
 			String hp = sc.next();//입력
