@@ -1,6 +1,5 @@
 package com.javaex.ex05;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CalcApp {
